@@ -17,7 +17,8 @@ const fakeApiData = [
   },
   {
     id: 2,
-    image: "https://i.postimg.cc/xT8Kdy2X/appreciation-and-inflation.jpg",
+    image:
+      "https://i.postimg.cc/43bWGHqr/big-american-house-generative-ai-170984-9624.avif",
     price: "45,000",
     title: "2BHK Apartment for Rent in HSR Layout",
     location: "HSR Layout, Bengaluru, Karnataka - 560102",
@@ -28,7 +29,8 @@ const fakeApiData = [
   },
   {
     id: 3,
-    image: "https://i.postimg.cc/xT8Kdy2X/appreciation-and-inflation.jpg",
+    image:
+      "https://i.postimg.cc/mkD4Cs7g/ai-generated-beautiful-home-exterior-in-evening-with-glowing-interior-lights-and-landscaping-photo.jpg",
     price: "90.00 Lac",
     title: "2BHK Apartment for Sale in Bellandur",
     location: "WMJH+59C, Bellandur, Bengaluru, Karnataka 560103",
@@ -39,7 +41,7 @@ const fakeApiData = [
   },
   {
     id: 4,
-    image: "https://i.postimg.cc/xT8Kdy2X/appreciation-and-inflation.jpg",
+    image: "https://i.postimg.cc/jq9mZPbX/dream-home-2216148.webp",
     price: "1.75 CR",
     title: "3BHK Apartment for Sale in DSR Rainbow Heights",
     location: "DSR Rainbow Heights, 2nd Cross Rd, Bengaluru",
@@ -50,7 +52,8 @@ const fakeApiData = [
   },
   {
     id: 5,
-    image: "https://i.postimg.cc/xT8Kdy2X/appreciation-and-inflation.jpg",
+    image:
+      "https://i.postimg.cc/tCGQ9WMg/exterior-luxury-home-with-double-garage-brick-siding-trim-generative-ai-28914-19018.avif",
     price: "50.00 Lac",
     title: "1BHK Apartment for Sale in Whitefield",
     location: "Whitefield, Bengaluru Karnataka - 560066",
@@ -72,7 +75,7 @@ const fakeApiData = [
   },
   {
     id: 7,
-    image: "https://i.postimg.cc/xT8Kdy2X/appreciation-and-inflation.jpg",
+    image: "https://i.postimg.cc/BQphRFWk/istockphoto-1387920805-170667a.webp",
     price: "75,000",
     title: "3BHK Apartment for Rent in Indiranagar",
     location: "Indiranagar, Bengaluru, Karnataka - 560038",
@@ -83,7 +86,7 @@ const fakeApiData = [
   },
   {
     id: 8,
-    image: "https://i.postimg.cc/xT8Kdy2X/appreciation-and-inflation.jpg",
+    image: "https://i.postimg.cc/jq9mZPbX/dream-home-2216148.webp",
     price: "75,000",
     title: "3BHK Apartment for Rent in Indiranagar",
     location: "Indiranagar, Bengaluru, Karnataka - 560038",
@@ -131,9 +134,11 @@ const ApartmentCarousel = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-x-auto">
+        <div className="flex flex-nowrap overflow-hidden m-1">
           {apartments.slice(currentIndex, currentIndex + 4).map((apartment) => (
-            <ApartmentCard key={apartment.id} apartment={apartment} />
+            <div key={apartment.id} className="flex-shrink-0 mr-4">
+              <ApartmentCard apartment={apartment} />
+            </div>
           ))}
         </div>
         <button
