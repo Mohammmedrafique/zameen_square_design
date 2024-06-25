@@ -118,7 +118,7 @@ const ApartmentCarousel = () => {
   return (
     <div className="max-w-6xl mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold text-gray-800">
+        <h2 className="lg:text-2xl font-bold text-gray-800 sm:text-md">
           Popular Apartments in Bengaluru
         </h2>
         <div className="flex space-x-2">
@@ -134,7 +134,7 @@ const ApartmentCarousel = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="flex flex-nowrap overflow-hidden m-1">
+        <div className="flex flex-nowrap overflow-hidden m-1 pb-1">
           {apartments.slice(currentIndex, currentIndex + 4).map((apartment) => (
             <div key={apartment.id} className="flex-shrink-0 mr-4">
               <ApartmentCard apartment={apartment} />
