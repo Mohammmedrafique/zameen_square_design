@@ -70,6 +70,28 @@ const fakeApiData = [
     furnished: "Furnished",
     postedOn: "12 Aug 2023",
   },
+  {
+    id: 7,
+    image: "https://i.postimg.cc/xT8Kdy2X/appreciation-and-inflation.jpg",
+    price: "75,000",
+    title: "3BHK Apartment for Rent in Indiranagar",
+    location: "Indiranagar, Bengaluru, Karnataka - 560038",
+    beds: 3,
+    baths: 3,
+    furnished: "Furnished",
+    postedOn: "12 Aug 2023",
+  },
+  {
+    id: 8,
+    image: "https://i.postimg.cc/xT8Kdy2X/appreciation-and-inflation.jpg",
+    price: "75,000",
+    title: "3BHK Apartment for Rent in Indiranagar",
+    location: "Indiranagar, Bengaluru, Karnataka - 560038",
+    beds: 3,
+    baths: 3,
+    furnished: "Furnished",
+    postedOn: "12 Aug 2023",
+  },
 ];
 
 const ApartmentCarousel = () => {

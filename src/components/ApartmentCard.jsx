@@ -13,7 +13,7 @@ const ApartmentCard = ({ apartment }) => (
         <IndianRupee size={16} className="mr-1 mt-1" />
         <span className="text-sm">{apartment.price}</span>
       </h3>
-      <h4 className="text-lg font-medium mt-1">{apartment.title}</h4>
+      <h4 className="text-md font-medium mt-1">{apartment.title}</h4>
       <p className="text-sm flex text-gray-500 mt-1">
         <MapPin size={16} className="mr-1 mt-1" />
         <span className="text-sm">{apartment.location}</span>
@@ -32,19 +32,17 @@ const ApartmentCard = ({ apartment }) => (
           <span className="text-sm">{apartment.furnished}</span>
         </div>
       </div>
-      {/* <p className="text-sm text-gray-500 mt-3">
-        Posted On: {apartment.postedOn}
-      </p>
-      <button className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors">
-        View Details
-      </button> */}
-      <div className="flex">
-      <p className="text-sm text-black mt-3">
-        Posted On: {apartment.postedOn}
-      </p>
-      <button className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors">
-        View Details
-      </button>
+
+      <div className="flex justify-between items-start">
+        <div className="text-sm text-black mt-3">
+          <p>Posted On:</p>
+          <p>{apartment.postedOn}</p>
+        </div>
+        <div className="mt-4">
+          <button className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors">
+            View Details
+          </button>
+        </div>
       </div>
     </div>
   </div>
