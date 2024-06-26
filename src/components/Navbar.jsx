@@ -8,13 +8,11 @@ const Navbar = () => {
         {/* Mobile view */}
         <div className="flex justify-between items-center h-16 sm:hidden">
           <div className="flex-shrink-0 flex items-center">
-            <svg
-              className="h-8 w-8 text-blue-500"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
+            <img
+              src="https://zameensquare.com/_next/static/media/zameen-mob-logo.74a5a37e.png"
+              alt="Zameen Square Logo"
+              className="h-8 w-8"
+            />
           </div>
           <div className="flex items-center">
             <button className="text-gray-600 bg-gray-50 hover:text-blue-500 px-2 py-1 rounded-md text-sm font-medium flex items-center">
@@ -37,14 +35,11 @@ const Navbar = () => {
         <div className="hidden sm:flex sm:justify-between sm:h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <svg
-                className="h-8 w-8 text-blue-500"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <span className="ml-2 text-xl font-bold">Zameen Square</span>
+              <img
+                src="https://zameensquare.com/_next/static/media/zameen-logo.be926326.png"
+                alt="Zameen Square Logo"
+                className="h-8 "
+              />
             </div>
             <div className="ml-6 flex space-x-8">
               <button className="text-gray-600 bg-gray-50 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium flex items-center">
