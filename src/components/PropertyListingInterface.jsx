@@ -3,7 +3,7 @@ import { Search, MapPin } from "lucide-react";
 const PropertyListingInterface = () => {
   return (
     <div className="relative flex flex-col justify-center items-center  bg-cover  bg-no-repeat h-[20vh] sm:h-[50vh]  bg-[url('https://zameensquare.com/_next/static/media/homeHeaderImage.25bb3789.gif')] mb-16">
-      <div className="bg-white p-4 rounded-lg shadow-md absolute w-80 lg:w-1/3  translate-y-24 lg:bottom-1 transform lg:translate-y-1/2">
+      <div className="bg-white p-4 rounded-lg shadow-md absolute w-80 lg:w-1/3  translate-y-28 lg:bottom-1 transform lg:translate-y-1/2">
         <div className="flex ">
           <button className=" text-blue-700  py-2 underline font-semibold rounded hover:underline hover:text-blue-600 hover:font-bold">
             Buy
